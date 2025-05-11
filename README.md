@@ -1,0 +1,2 @@
+# ordbot
+Ordinary robot.
