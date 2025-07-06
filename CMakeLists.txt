@@ -5,6 +5,8 @@ project(ordbot)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11")
 
+list(APPEND LD_LIBRARY_PATH "/usr/local/lib")
+
 find_package(MRPT 2.10.0 REQUIRED gui img)
 
 aux_source_directory(src SRC_LIST)
